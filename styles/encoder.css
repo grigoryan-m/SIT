@@ -1,0 +1,29 @@
+/*.interview {
+    border: 1px dashed black;
+    width: 100%;
+    padding: 5px;
+    line-height: 45px;
+}*/
+.test{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+    padding-left: 15px;
+    line-height: 45px;
+    background-color: #3B3A40;
+    border-radius:5px;
+    color: white;
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+}
+.content{
+    max-width: 720px;
+    margin: 0 auto;
+}
+#description{
+    line-height: 30px;
+}
+b{
+    color: grey;
+}
+

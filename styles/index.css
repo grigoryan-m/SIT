@@ -1,0 +1,30 @@
+.page_content{
+	display: flex;
+	flex-wrap: wrap;
+}
+.page_content div{
+	flex:1;
+	min-width: 300px;
+	width: 20%;
+	text-align: center;
+}
+.page_content div span{
+	font-weight: bold;
+	font-family: 'Merriweather';
+}
+.page_content div a{
+	display: block;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+
+.search{
+	width: 100vw;
+	padding: 10px;
+}
+.search input{
+	display: block;
+	float: right;
+	margin-right: 100px;
+	padding: 10px;
+}
