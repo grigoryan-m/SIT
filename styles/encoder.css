@@ -27,3 +27,8 @@ b{
     color: grey;
 }
 
+@media only screen and (max-width: 905px){
+    .test{
+        font-size: 14px;
+    }
+}
