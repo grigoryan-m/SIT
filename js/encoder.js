@@ -6,11 +6,11 @@ window.onload = function(){
         let d = document.getElementById("description");
         replace("///", "<p class='test'>");
         replace("\\\\\\", "</p>");
-        replace("((", "<b>Сотрудник SIT: </b>");
-        replace("))", "<b>Объект: </b>");
+        replace("((", "</span><span class='block'><b>Сотрудник SIT: </b>");
+        replace("))", "</span><span class='block'><b>Объект: </b>");
         replace("*", "<br/>");
-        replace("--", "<b>Испытуемый: </b>")
-
+        replace("--", "</span><span class='block'><b>Испытуемый: </b>")
+        replace("==", "</span><span class='block'><b>Допрашиваемый: </b>")
         let header = `<div class='header'>
                           <div class='logo'>
                             <a href='../index.html'>
