@@ -24,6 +24,8 @@ img{
 	height: 150px;
 	background-color:#3B3A40;
 	color: white;
+	overflow: hidden;
+	box-sizing: border-box;
 }
 .header .logo{
 	display: flex;
