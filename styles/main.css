@@ -3,6 +3,16 @@
 	margin: 0;
 	overflow-x: hidden;
 }
+img{
+	max-width: 100%;
+	height: auto;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+.img{
+	display: inline;
+}
 .container{
 	width: 100vw;
 	height: 100vh;
@@ -14,6 +24,8 @@
 	height: 150px;
 	background-color:#3B3A40;
 	color: white;
+	overflow: hidden;
+	box-sizing: border-box;
 }
 .header .logo{
 	display: flex;
@@ -38,7 +50,7 @@
 }
 .sit_description{
 	box-sizing: border-box;
-	width: 1200px;
+	max-width: 1200px;
 	min-height: 700px;
 	margin: 0 auto;
 	margin-top: 20px;
@@ -68,6 +80,12 @@ hr{
 #description{
 	font-family: 'Merriweather', serif;
 }
+@media only screen and (max-width: 1285px){
+	.sit_description{
+		width:90vw;
+		font-size: 14px;
+	}
+}
 @media only screen and (max-width: 905px){
 	.header .logo span{
 		font-size: 25px;
@@ -78,10 +96,12 @@ hr{
 	.header{
 		height: 130px;
 	}
-	.sit_description{
-		width:90vw;
-
-		font-size: 14px;
+	.img{
+		display: block;
+	}
+	img{
+		margin-left: 50%;
+		transform:translateX(-50%);
 	}
 }
 @media only screen and (max-width: 795px){
