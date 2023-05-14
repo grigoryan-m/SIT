@@ -24,7 +24,6 @@
 }
 .search input{
 	display: block;
-	float: right;
-	margin-right: 100px;
+	margin: 0 auto;
 	padding: 10px;
 }
