@@ -14,7 +14,6 @@
 header{
     width: 100%;
 }
-<<<<<<< HEAD
 .header .logo{
 	display: flex;
 	align-items: center;
@@ -23,7 +22,7 @@ header{
 .header .logo img{
 	box-sizing: border-box;
 	width: 150px;
-=======
+}
 header nav{
     display: flex;
 }
