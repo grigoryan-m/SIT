@@ -153,6 +153,9 @@ header nav a:last-child{
         text-align: right;
         margin-top: 20px;
     }
+    .hamburger a:first-child{
+        color: #F3C58E;
+    }
 }
 
 @media only screen and (max-width: 1066px){
