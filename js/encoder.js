@@ -14,7 +14,7 @@ window.onload = function(){
         let header = `<div class='header'>
                           <div class='logo'>
                             <a href='../index.html'>
-                              <img src='../img/logo.png'>
+                                <img src='../img/logo.png'>
                             </a>
                             <span>SIT: Search and Isolation of Threats</span>
                           </div>
