@@ -7,6 +7,7 @@
     width: 100vw;
     height: 100vh;
     background: linear-gradient(90deg,#2D2C2C, #383636);
+    scroll-behavior: smooth;
 }
 .container{
     padding: 49px 8%;
@@ -33,7 +34,6 @@ header nav a{
     font-size: 18px;
     margin-left: 7%;
     transition: 0.2s;
->>>>>>> 9b8146f9d2af5519518c8daff96ab77e1ec2360d
 }
 header nav a:not(:first-of-type, :last-of-type):hover{
     transform: translateY(-5px);
@@ -43,6 +43,9 @@ header nav a:first-child{
     margin-right: auto;
     margin-left: 0;
     font-size: 24px;
+}    
+header nav a:first-child:hover{
+    letter-spacing: 3px;
 }    
 header nav{
     display: flex;
@@ -182,4 +185,24 @@ hr{
     .buttons button{
         margin-right: 0 !important;
     }
+}
+#about-us{
+    margin-top: 58px;
+    color: white;
+}
+#about-us p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.065em;
+    color: #cdcaca;
+    margin-top: 21px;  
+}
+#about-us h1{
+    text-align: center;
+    font-weight: normal;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
 }
