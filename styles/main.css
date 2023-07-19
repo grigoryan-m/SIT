@@ -23,6 +23,10 @@ header nav a{
     text-decoration: none;
     font-size: 18px;
     margin-left: 7%;
+    transition: 0.2s;
+}
+header nav a:not(:first-of-type, :last-of-type):hover{
+    transform: translateY(-5px);
 }
 header nav a:first-child{
     text-transform: uppercase;
@@ -62,6 +66,12 @@ header nav a:last-child{
     color: white;
     font-size: 24px;
     font-family: 'Montserrat', sans-serif;
+    margin-right: 20px;
+    cursor:pointer;
+    transition: 0.5s ease-in-out;
+}
+.hamburger{
+    display: none;
 }
 .main button:first-of-type{
     background-color: #F3C58E;
@@ -78,14 +88,8 @@ header nav a:last-child{
     justify-content: space-around;
     align-items: center;
 }
-.main .right-side{
-}
 .main .left-side p{
     margin-bottom: 36px;
-}
-.main .buttons button{
-    margin-right: 20px;
-    cursor:pointer;
 }
 .main .right-side img{
     width: 36vw;
@@ -101,11 +105,11 @@ header nav a:last-child{
     }
 }
 @media only screen and (max-width: 755px){
-    header nav a:not(:first-child, :last-child){
+    header nav a:not(:first-of-type, :last-of-type){
         display: none;
     }
-    header nav a:last-child{
-        display: inline;
+    header nav a:last-of-type{
+        display: block;
         font-size: 24px;
     }
     .main{
@@ -120,20 +124,24 @@ header nav a:last-child{
     .main p{
         font-size: 40px;
     }
+    .hamburger.active{
+        display: block;
+    }
+    .hamburger a{
+        border-bottom: 1px solid white;
+        display: block;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+        font-size: 18px;
+        margin-left: 7%;
+        transition: 0.2s;
+        height: 40px;
+        text-align: right;
+        margin-top: 20px;
+    }
 }
-@media only screen and (max-width: 610px){
-    .buttons button:last-of-type{
-        margin-top: 20px;   
-    }
-    .left-side{
-        width: 100vw;
-        border: 1px dashed blue;
-        text-align: center;
-    }
-    .left-side p{
-        width: 100%;
-    }
-}
+
 @media only screen and (max-width: 1066px){
     .main .right-side{
         display: none;
@@ -149,4 +157,19 @@ hr{
     width: 200px;
     margin-left: 50%;
     transform: translateX(-50%);
+}
+@media only screen and (max-width: 610px){
+    .buttons button:last-of-type{
+        margin-top: 20px;   
+    }
+    .left-side{
+        width: 100vw;
+        text-align: center;
+    }
+    .left-side p{
+        width: 100%;
+    }
+    .buttons button{
+        margin-right: 0 !important;
+    }
 }
