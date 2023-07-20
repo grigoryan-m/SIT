@@ -86,12 +86,12 @@ header nav a:last-child{
 .hamburger{
     display: none;
 }
-.main button:first-of-type{
-    background-color: #F3C58E;
+.main a:nth-child(1) > button{
+    background-color: #F3C58E !important;
     border: none;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.74);
 }
-.main button:last-of-type{
+.main a:last-of-type > button{
     background-color: transparent;
     border: 1px solid #F3C58E;
 }
@@ -189,11 +189,12 @@ hr{
         margin-right: 0 !important;
     }
 }
-#about-us{
+section{
     margin-top: 58px;
     color: white;
+    margin-bottom: 58px;
 }
-#about-us p{
+#about-us p, #instruction p, #donation p{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -201,11 +202,28 @@ hr{
     line-height: 25px;
     letter-spacing: 0.065em;
     color: #cdcaca;
-    margin-top: 21px;  
+    margin-top: 15px;  
 }
-#about-us h1{
+section h1{
     text-align: center;
     font-weight: normal;
     font-size: 40px;
     font-family: 'Montserrat', sans-serif;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+table td, table tr, table th{
+    border: 1px solid #ddd;
+}
+table td, table th{
+    padding: 6px;
+    font-weight: normal;
+}
+table tr:nth-child(even){
+    background-color: #525252;
+}
+table td:nth-child(odd){
+    text-align: center;
 }
