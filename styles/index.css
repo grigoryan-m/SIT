@@ -1,29 +1,225 @@
-.page_content{
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+.wrap{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg,#2D2C2C, #383636);
+    scroll-behavior: smooth;
+}
+.container{
+    padding: 49px 8%;
+}
+header{
+    width: 100%;
+}
+.header .logo{
 	display: flex;
-	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
 }
-.page_content div{
-	flex:1;
-	min-width: 300px;
-	width: 20%;
-	text-align: center;
+.header .logo img{
+	box-sizing: border-box;
+	width: 150px;
 }
-.page_content div span{
-	font-weight: bold;
-	font-family: 'Merriweather';
+header nav{
+    display: flex;
 }
-.page_content div a{
-	display: block;
-	text-decoration: none;
-	margin-bottom: 10px;
+header nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 7%;
+    transition: 0.2s;
+}
+header nav a:not(:first-of-type, :last-of-type):hover{
+    transform: translateY(-5px);
+}
+header nav a:first-child{
+    text-transform: uppercase;
+    margin-right: auto;
+    margin-left: 0;
+    font-size: 24px;
+}    
+header nav a:first-child:hover{
+    letter-spacing: 3px;
+}    
+header nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
 }
 
-.search{
-	width: 100vw;
-	padding: 10px;
+header nav a:nth-child(2){
+    color: #F3C58E;
 }
-.search input{
-	display: block;
-	margin: 0 auto;
-	padding: 10px;
+
+header nav a:last-child{
+    display: none;
+}
+.main{
+    width: 100%;
+    min-height: 626px;
+}
+.main p{
+    color: white;
+    font-weight: normal;
+    font-size: 48px;
+    width: 430px;
+}
+.main button{
+    width: 233px;
+    height: 64px;
+    border-radius: 5px;
+    color: white;
+    font-size: 24px;
+    margin-right: 20px;
+    cursor:pointer;
+    transition: 0.5s ease-in-out;
+}
+.hamburger{
+    display: none;
+}
+.main a:nth-child(1) > button{
+    background-color: #F3C58E !important;
+    border: none;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.74);
+}
+.main a:last-of-type > button{
+    background-color: transparent;
+    border: 1px solid #F3C58E;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.main .left-side p{
+    margin-bottom: 36px;
+}
+.main .right-side img{
+    width: 36vw;
+    max-width: 436px;
+    height: auto;
+}
+@media only screen and (max-width: 1012px){
+    header nav a{
+        font-size: 15px;
+    }
+    header nav a:first-child{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 755px){
+    header nav a:not(:first-of-type, :last-of-type){
+        display: none;
+    }
+    header nav a:last-of-type{
+        display: block;
+        font-size: 24px;
+    }
+    .main{
+        min-height: 500px;
+    }
+    .container{
+        padding-top: 35px;
+    }
+    header nav a:first-child{
+        font-size: 24px;
+    }
+    .main p{
+        font-size: 40px;
+    }
+    .hamburger.active{
+        display: block;
+    }
+    .hamburger a{
+        border-bottom: 1px solid white;
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        margin-left: 7%;
+        transition: 0.2s;
+        height: 40px;
+        text-align: right;
+        margin-top: 20px;
+    }
+    .hamburger a:first-child{
+        color: #F3C58E;
+    }
+}
+
+@media only screen and (max-width: 1066px){
+    .main .right-side{
+        display: none;
+    }
+    .main{
+        justify-content: left;
+    }
+    .main .buttons{
+        justify-self: end;
+    }
+}
+hr{
+    width: 200px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+@media only screen and (max-width: 610px){
+    .buttons button:last-of-type{
+        margin-top: 20px;   
+    }
+    .left-side{
+        width: 100vw;
+        text-align: center;
+    }
+    .left-side p{
+        width: 100%;
+    }
+    .buttons button{
+        margin-right: 0 !important;
+    }
+}
+section{
+    margin-top: 58px;
+    color: white;
+    margin-bottom: 58px;
+}
+#about-us p, #instruction p, #donation p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.065em;
+    color: #cdcaca;
+    margin-top: 15px;  
+}
+section h1{
+    text-align: center;
+    font-weight: normal;
+    font-size: 40px;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+table td, table tr, table th{
+    border: 1px solid #ddd;
+}
+table td, table th{
+    padding: 6px;
+    font-weight: normal;
+}
+table tr:nth-child(even){
+    background-color: #525252;
+}
+table td:nth-child(odd){
+    text-align: center;
 }
